@@ -1,0 +1,4 @@
+interface:
+  display_name: "Alpha Extraction"
+  short_description: "Extract only the alpha; built for triage."
+  default_prompt: "Extract only the alpha from the provided source(s)."

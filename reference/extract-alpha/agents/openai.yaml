@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Alpha"
+  short_description: "Extract only actionable edge."
+  default_prompt: "Extract only the alpha from the provided source."

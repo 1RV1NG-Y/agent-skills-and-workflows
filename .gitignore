@@ -1,0 +1,5 @@
+# Obsidian vault config (personal, changes on every open)
+.obsidian/
+
+# Local cross-model comparison notes, not for sharing
+comparisons/

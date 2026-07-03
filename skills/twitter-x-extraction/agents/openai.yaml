@@ -1,0 +1,4 @@
+interface:
+  display_name: "X/Twitter Extraction"
+  short_description: "Extract clean X/Twitter post text."
+  default_prompt: "Use $twitter-x-extraction to extract clean text and metadata from this X/Twitter URL."

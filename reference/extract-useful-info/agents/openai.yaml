@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Useful Info"
+  short_description: "Extract alpha and useful takeaways."
+  default_prompt: "Extract useful information and alpha from the provided source."

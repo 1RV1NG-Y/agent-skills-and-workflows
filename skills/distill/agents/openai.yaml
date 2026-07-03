@@ -1,0 +1,4 @@
+interface:
+  display_name: "Distill"
+  short_description: "Extract useful info and promoted alpha."
+  default_prompt: "Distill the useful information and the alpha from the provided source."
