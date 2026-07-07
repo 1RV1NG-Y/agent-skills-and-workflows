@@ -33,6 +33,7 @@ codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check \
   -C /abs/path/to/workdir -o /path/to/scratch/last-message.md "PROMPT" </dev/null
 ```
 
+- If `codex` isn't on PATH (typical on Windows), the desktop app bundles the CLI — call it as `~/.codex/.sandbox-bin/codex.exe`. Same flags, same behavior.
 - Full permissions always — that's the user's standing choice. Exec mode never shows approval prompts, and the bypass flag means nothing stalls or silently fails. Caution comes from the prompt (two-phase above).
 - `</dev/null` keeps it from waiting on stdin.
 - `-o FILE` writes codex's final message to a file. For long runs: launch in the background, send stdout to a log, and read just the `-o` file when it finishes.
