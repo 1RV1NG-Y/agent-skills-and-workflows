@@ -15,6 +15,13 @@ The invocation is free text, not a schema. It usually names the target — URL, 
 
 Whatever yields clean text is fine — the extraction below is input-agnostic.
 
+First check for the companion extraction tools and prefer them when installed:
+
+- **`transcribe`** (kb-transcribe) — if on PATH, use it for anything without usable captions: podcasts, talks, local audio/video, YouTube videos lacking subs. `transcribe <url-or-file>` writes a Markdown transcript with frontmatter and skips videos it has already done.
+- **`kb-screenshot`** — if on PATH, or if `.md` sidecar notes already sit next to the images, the OCR text and metadata are already extracted — read the sidecars instead of re-OCRing.
+
+Otherwise fall back to the generic paths:
+
 - **YouTube / video platforms**: `yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs "<lang>.*" --convert-subs srt -o "<tmpdir>/sub" "<url>"` — match the language to the video, and prefer human captions over auto-subs when both come down. Auto-subs repeat rolling lines; dedupe before reading.
 - **X / Twitter**: x.com blocks anonymous fetching — swap the domain to `https://api.fxtwitter.com/<user>/status/<id>` for the full post as JSON, quoted posts included. Read the JSON directly, not through a summarizing fetcher, so the text stays verbatim.
 - **Images / screenshots**: read them directly; `tesseract` only for bulk OCR.
