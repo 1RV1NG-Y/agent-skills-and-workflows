@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Fast-Moving Tech"
+  short_description: "Fresh, exhaustive research for evolving technology"
+  default_prompt: "Use $research-fast-moving-tech to research this fast-changing technology from scratch using current primary sources."

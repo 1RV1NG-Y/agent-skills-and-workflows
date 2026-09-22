@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gauntlet Loop"
+  short_description: "Iterate with independent critics against a real bar."
+  default_prompt: "Run a Gauntlet Loop on this goal using a concrete external quality bar, fresh independent critics, and evidence-based iteration."
